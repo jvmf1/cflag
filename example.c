@@ -34,5 +34,14 @@ int main(int argc, char **argv) {
 	printf("%s %s\n", strings[0], strings[1]);
 
 	parser_free(&parser);
+
+	/*
+	$ ./example -a 2.3 4.2 -s hello world -bi 4
+	4
+	1
+	23
+	2.300000 4.200000
+	hello world
+	*/
 }
 

@@ -50,7 +50,7 @@ static void parse(flag_t *flag, char *arg, int offset) {
 }
 
 static void unknow_flag(char *arg) {
-	fprintf(stderr, "error: flag %s is unknown\n", arg);
+	fprintf(stderr, "error: flag '%s' is unknown\n", arg);
 	exit(1);
 }
 

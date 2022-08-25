@@ -69,6 +69,8 @@ void parser_parse(parser_t *parser, int argc, char **argv) {
 	for (; i < argc; i++) {
 		int arg_len = strlen(argv[i]);
 		if (argv[i][0] == '-' && argv[i][1] != '-') {
+			if (argv[i][1] == 0)
+				unknow_flag(argv[i]);
 			for (int j = 1; j < arg_len; j++) {
 				char tmp[2] = {0};
 				tmp[0] = argv[i][j];
